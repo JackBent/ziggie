@@ -12,14 +12,15 @@ const Map = () => {
 
     const classes = useStyles();
     const isMobile = useMediaQuery('(min-width:600px)');
-    const coords = { lat : 0, lng: 0}
+    const coords = {lat: 36, lng: -96}
+   
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
                 bootstrapURLKeys={{key: 'AIzaSyB-9mK9avFE5-yPNs7OkeFhRPw-HolPTOA'}}
                 defaultCenter={coords}
                 center={coords}
-                defaultZoom={14}
+                defaultZoom={10}
                 margin={[50, 50, 50, 50]}
                 options={''}
                 onChange={''}
